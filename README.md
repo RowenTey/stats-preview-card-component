@@ -6,7 +6,7 @@ This is a solution to the [Stats Preview Card component challenge on Frontend Me
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- 
+
 ## 📸 Screenshots
 
 <!-- ![main](./images/screenshot.png) -->
@@ -14,4 +14,4 @@ Users should be able to:
 ## 🔗 Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/order-summary-component-using-scss-css-flexbox-B1P3Of0r5)
-- [Live Site URL](https://order-summary-component-aax.pages.dev/)
+- [Live Site URL](https://stats-preview-card-component-cwr.pages.dev/)
