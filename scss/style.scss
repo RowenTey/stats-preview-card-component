@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$mainBG: hsl(233, 47%, 7%);
+$cardBG: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+$main-color: hsl(0, 0%, 100%);
+$main-p: hsla(0, 0%, 100%, 0.6);
+
+$font-size: 15px;
+$font1: "Inter";
+$font2: "Lexend Deca";
+
+@mixin display($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    @include display(column);
+    background-color: $mainBG;
+    color: $main-color;
+    justify-content: flex-end;
+    font-size: $font-size;
+}
+
+main {
+    @include display(column);
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    @include display(row-reverse);
+    background-color: $cardBG;
+    border-radius: 0.5rem;
+    max-width: 65.25rem;
+}
+
+.img-wrapper {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    width: 50%;
+    position: relative;
+
+    img {
+        // visibility: hidden;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        z-index: 1;
+    }
+}
+
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    background-color: hsl(277, 65%, 56%);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.text {
+    @include display(column);
+    justify-content: center;
+    gap: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 3rem;
+    font-family: $font1;
+    padding: 4rem 1rem;
+    width: 50%;
+}
+
+.main-text {
+    @include display(column);
+    gap: 2rem;
+    margin-top: 1rem;
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.25rem;
+
+        span {
+            color: $accent;
+        }
+    }
+
+    p {
+        line-height: 1.75;
+        color: $main-p;
+        margin-right: 4rem;
+    }
+}
+
+.features-div {
+    @include display(row);
+    margin-top: 2rem;
+    gap: 3rem;
+    line-height: 1.5;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    p {
+        font-family: $font2;
+        font-size: 13px;
+        color: $main-p;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+/* footer */
+.attribution {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.attribution a {
+    color: $accent;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 414px) {
+    .card {
+        @include display(column);
+        max-width: 80vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-wrapper {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        margin: 0 10px;
+        padding: 1rem 0.5rem;
+        gap: 0;
+    }
+
+    .main-text {
+        margin: 1rem 0.5rem 0.5rem;
+        gap: 0;
+
+        h1 {
+            font-size: 26px;
+        }
+
+        p {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .features-div {
+        @include display(column);
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
+        gap: 1rem;
+    }
+}
