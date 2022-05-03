@@ -13,5 +13,5 @@ Users should be able to:
 
 ## 🔗 Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/order-summary-component-using-scss-css-flexbox-B1P3Of0r5)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-using-scss-css-flexbox-r1ZEvC0rq)
 - [Live Site URL](https://stats-preview-card-component-cwr.pages.dev/)
