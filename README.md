@@ -1,4 +1,4 @@
-# 🛒 Stats Preview Card
+# 📊 Stats Preview Card
 
 This is a solution to the [Stats Preview Card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
