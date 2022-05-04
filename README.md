@@ -9,7 +9,7 @@ Users should be able to:
 
 ## 📸 Screenshots
 
-<!-- ![main](./images/screenshot.png) -->
+![main](./images/screenshot.png)
 
 ## 🔗 Links
 
